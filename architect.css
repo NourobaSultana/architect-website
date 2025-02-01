@@ -64,7 +64,7 @@
 
   .banner-title{
     font-weight: 700;
-    font-size: 7rem;
+    font-size: 4rem;
   }
 
   .btn-primary{
@@ -118,6 +118,44 @@
   #quick-list{
     font-weight: 500;
   }
+
+  /* feature section related styles */
+  #feature-section-bar{
+   border-left: 5px solid #FF900E ;
+   padding-left:20px;
+  }
+
+  .features{
+    gap: 140px;
+  }
+
+  .feature-card{
+    padding:30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  }
+
+   .feature-title{
+    font-weight:600;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  #experience-badge{
+    padding: 45px 42px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: -100px;
+    margin-top: -200px;
+  }
+  #experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .feature-architech img{
+    width: 100%;
+  }
  /* fact card */
   .facts-container{
     display: grid;
@@ -163,15 +201,39 @@
     filter: grayscale(100%);
   }
 
+  /* footer */
+
+  .footer-container{
+    background-color:rgba(255, 244, 231, 1);
+    /* width: 1440px; */
+    height:40px;
+    border-radius: 8px;
+   padding: 38px 400px;
+   margin: 0 60px;
+   font-size: 1.25rem;
+   font-weight: 400;
+  }
+
   /* responsive media query */
 
   @media screen and (max-width: 567px){
-    .navbar, .nav-links, .teams, .fact-container{
+    .navbar, 
+    .nav-links, 
+    .teams, 
+    .fact-container,
+    .features{
         flex-direction: column;
-    
     }
 
-    .team-img-container, .facts-container, .sponsor-companies{
+    .our-features{
+        margin: 0 auto;
+    }
+
+ 
+
+    .team-img-container, 
+    .facts-container, 
+    .sponsor-companies{
         grid-template-columns: 1fr;
     }
     .facts-container{
@@ -182,6 +244,19 @@
     .sponsor-companies{
         gap: 40px;
     }
+
+    .features img{
+      width: 100%;
+    }
+    
+    #experience-badge{
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+     .feature-description{
+      width: 360px;
+      text-align: center;
+     }
   }
 
 
@@ -200,6 +275,11 @@
     .sponsor-companies, .facts-container{
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
+    }
+
+    #experience-badge{
+      margin-top: 20px;
+      margin-left: 20px;
     }
   }
 
